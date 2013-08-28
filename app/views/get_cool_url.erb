@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>Welcome to Sinatra!</h1>
+  <p>Hello, world!</p>
+
+  <table>
+    <tr>
+        <% if params[:robot] == "video" %>  
+          <iframe width="560" height="315" src="//www.youtube.com/embed/BtRnzlO7m_M?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
+        <% elsif params[:robot] == "drawing" %>
+          <a href="http://vanhoozerstudios.blogspot.com/2010/10/symbionic-showdown.html">drawing</a>
+        <% end %>
+    </tr>
+  </table>
+</div>

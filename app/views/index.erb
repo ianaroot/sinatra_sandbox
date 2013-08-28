@@ -1,0 +1,84 @@
+<div class="container">
+  <h1>Welcome to Sinatra!</h1>
+  <p>Hello, world!</p>
+
+  <table>
+    <tr>
+      <th>File Description</th>
+      <th>File Location</th>
+    </tr>
+
+    <tr>
+      <td>This view file</td>
+      <td><code><%= __FILE__.gsub(Sinatra::Application.root, '') %></code></td>
+    </tr>
+
+    <tr>
+      <td>The layout file</td>
+      <td><code><%= File.expand_path('../layout.erb', __FILE__).gsub(Sinatra::Application.root, '') %></code></td>
+    </tr>
+
+    <tr>
+      <td>The current controller</td>
+      <td><code><%= File.expand_path('../../controllers/index.rb', __FILE__).gsub(Sinatra::Application.root, '') %></code></td>
+    </tr>
+
+    <tr>
+      <td><form action="/cool_url" method="get">
+        <input type="text" name="robot">
+        <input type="submit" value="robot">
+      </form>
+    </td>
+    </tr>
+
+    <tr>
+      <td><form action="/cool_url" method="post">
+        <input type="text" name="monkey">
+    </td>
+    </tr>
+
+    <tr>
+      <td>
+        <form action="/cool_url" method="post">
+          <input type="radio" name="group1" value="less offensive joke"> less offensive joke<br>
+          <input type="radio" name="group1" value="bubble tea"> bubble tea<br>
+          <hr>
+          <input type="radio" name="group2" value="tinder" checkedfd> tinder<br>
+          <input type="radio" name="group2" value="ok cupid"> ok cupid<br>
+          <hr>
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+        <form name="rhinocerous" action="/cool_url" method="post">
+          <textarea cols="40" rows="5" name="myname">
+          </textarea>
+          <hr>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+
+        <form name="does this do anything?" action="/cool_url" method="post">
+          <input type="checkbox" name="option1" value="strawberry"> strawberry<br>
+          <input type="checkbox" name="option1" value="vanilla"> vanilla<br>
+          <input type="checkbox" name="option1" value="chocolate"> chocolate<br>
+          <hr>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <form name="seriously. don't get what this does" action="/cool_url" method="post">
+          <select name="favorite baby animal">
+          <option value="monkey">monkey</option>
+          <option value="elephant">elephant</option>
+          <option value="penguin">penguin</penguin>
+          <input type="submit" value="submit">
+        </form>
+      </tr>
+    </td>
+  </table>
+</div>
